@@ -7,7 +7,7 @@ This file contains the server for the API invoice service
 <dl>
   <dt>This api could be seen at:</dt>
   <dd>
-  ApiServer: http://localhost:3000/api2u/
+  ApiServer: http://localhost:3000/api2u/invoice/
   </dd>
 </dl>
 
