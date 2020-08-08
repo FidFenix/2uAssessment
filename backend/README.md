@@ -34,7 +34,6 @@ The server comes with a collection of npm scripts, run them with `npm run <scrip
 - `coverage`: Run only the unit tests and generate code coverage for them, the output will be on `coverage` folder
 - `lint`: Lint the codebase
 - `sequelize`: Alias to the [Sequelize CLI](https://github.com/sequelize/cli)
-- `console`: Open the built-in console, you can access the DI container through the `container` variable once it's open, the console is promise-friendly. Click [here](https://github.com/talyssonoc/node-api-boilerplate/wiki/Application-console) to know more about the built-in console
 
 ## Tech
 
