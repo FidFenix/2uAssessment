@@ -4021,3 +4021,493 @@ Resolution path: getAllInvoicesByStatus
 [2020-08-08 12:57:11.433] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 5.310 ms - 2[0m
 [2020-08-08 12:57:11.473] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
 [2020-08-08 12:57:11.476] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 7.676 ms - 2[0m
+[2020-08-08 13:26:13.192] [ERROR] [default] - SequelizeConnectionError: password authentication failed for user "zbcdchwb"
+    at /home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:20
+    at Client.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/client.js:203:5)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at ConnectionManager.connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:112:10)
+    at ConnectionManager.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Promise.then (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/promise.js:21:17)
+    at ConnectionManager.$connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:246:70)
+    at ConnectionManager.getConnection (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:203:44)
+    at Sequelize.query (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:844:83)
+    at Sequelize.authenticate (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:1085:15)
+    at Application.start (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/src/app/Application.js:14:27)
+    at Object.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/index.js:6:4)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+[2020-08-08 13:26:14.991] [ERROR] [default] - SequelizeConnectionError: password authentication failed for user "zbcdchwb"
+    at /home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:20
+    at Client.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/client.js:203:5)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at ConnectionManager.connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:112:10)
+    at ConnectionManager.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Promise.then (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/promise.js:21:17)
+    at ConnectionManager.$connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:246:70)
+    at ConnectionManager.getConnection (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:203:44)
+    at Sequelize.query (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:844:83)
+    at Sequelize.authenticate (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:1085:15)
+    at Application.start (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/src/app/Application.js:14:27)
+    at Object.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/index.js:6:4)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+[2020-08-08 13:26:22.099] [ERROR] [default] - SequelizeConnectionError: password authentication failed for user "zbcdchwb"
+    at /home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:20
+    at Client.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/client.js:203:5)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at ConnectionManager.connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:112:10)
+    at ConnectionManager.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Promise.then (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/promise.js:21:17)
+    at ConnectionManager.$connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:246:70)
+    at ConnectionManager.getConnection (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:203:44)
+    at Sequelize.query (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:844:83)
+    at Sequelize.authenticate (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:1085:15)
+    at Application.start (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/src/app/Application.js:14:27)
+    at Object.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/index.js:6:4)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+[2020-08-08 13:28:29.867] [ERROR] [default] - SequelizeConnectionError: password authentication failed for user "zbcdchwb"
+    at /home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:20
+    at Client.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/client.js:203:5)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at ConnectionManager.connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:112:10)
+    at ConnectionManager.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Promise.then (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/promise.js:21:17)
+    at ConnectionManager.$connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:246:70)
+    at ConnectionManager.getConnection (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:203:44)
+    at Sequelize.query (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:844:83)
+    at Sequelize.authenticate (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:1085:15)
+    at Application.start (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/src/app/Application.js:14:27)
+    at Object.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/index.js:6:4)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+[2020-08-08 13:28:36.581] [ERROR] [default] - SequelizeConnectionError: password authentication failed for user "zbcdchwb"
+    at /home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:20
+    at Client.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/client.js:203:5)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at ConnectionManager.connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:112:10)
+    at ConnectionManager.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Promise.then (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/promise.js:21:17)
+    at ConnectionManager.$connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:246:70)
+    at ConnectionManager.getConnection (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:203:44)
+    at Sequelize.query (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:844:83)
+    at Sequelize.authenticate (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:1085:15)
+    at Application.start (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/src/app/Application.js:14:27)
+    at Object.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/index.js:6:4)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+[2020-08-08 13:29:00.113] [ERROR] [default] - SequelizeConnectionError: password authentication failed for user "zbcdchwb"
+    at /home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:20
+    at Client.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/client.js:203:5)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at ConnectionManager.connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:112:10)
+    at ConnectionManager.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Promise.then (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/promise.js:21:17)
+    at ConnectionManager.$connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:246:70)
+    at ConnectionManager.getConnection (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:203:44)
+    at Sequelize.query (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:844:83)
+    at Sequelize.authenticate (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:1085:15)
+    at Application.start (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/src/app/Application.js:14:27)
+    at Object.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/index.js:6:4)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+[2020-08-08 13:29:03.843] [ERROR] [default] - SequelizeConnectionError: password authentication failed for user "zbcdchwb"
+    at /home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:20
+    at Client.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/client.js:203:5)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at ConnectionManager.connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:112:10)
+    at ConnectionManager.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Promise.then (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/promise.js:21:17)
+    at ConnectionManager.$connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:246:70)
+    at ConnectionManager.getConnection (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:203:44)
+    at Sequelize.query (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:844:83)
+    at Sequelize.authenticate (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:1085:15)
+    at Application.start (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/src/app/Application.js:14:27)
+    at Object.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/index.js:6:4)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+[2020-08-08 13:29:38.859] [ERROR] [default] - SequelizeConnectionError: password authentication failed for user "zbcdchwb"
+    at /home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:20
+    at Client.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/client.js:203:5)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at ConnectionManager.connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:112:10)
+    at ConnectionManager.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Promise.then (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/promise.js:21:17)
+    at ConnectionManager.$connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:246:70)
+    at ConnectionManager.getConnection (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:203:44)
+    at Sequelize.query (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:844:83)
+    at Sequelize.authenticate (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:1085:15)
+    at Application.start (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/src/app/Application.js:14:27)
+    at Object.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/index.js:6:4)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+[2020-08-08 13:29:52.612] [ERROR] [default] - SequelizeConnectionError: password authentication failed for user "zbcdchwb"
+    at /home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:20
+    at Client.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/client.js:203:5)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at ConnectionManager.connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:112:10)
+    at ConnectionManager.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Promise.then (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/promise.js:21:17)
+    at ConnectionManager.$connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:246:70)
+    at ConnectionManager.getConnection (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:203:44)
+    at Sequelize.query (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:844:83)
+    at Sequelize.authenticate (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:1085:15)
+    at Application.start (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/src/app/Application.js:14:27)
+    at Object.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/index.js:6:4)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+[2020-08-08 13:30:09.983] [ERROR] [default] - SequelizeConnectionError: password authentication failed for user "fidel"
+    at /home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:20
+    at Client.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/client.js:203:5)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at ConnectionManager.connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:112:10)
+    at ConnectionManager.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Promise.then (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/promise.js:21:17)
+    at ConnectionManager.$connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:246:70)
+    at ConnectionManager.getConnection (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:203:44)
+    at Sequelize.query (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:844:83)
+    at Sequelize.authenticate (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:1085:15)
+    at Application.start (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/src/app/Application.js:14:27)
+    at Object.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/index.js:6:4)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+[2020-08-08 13:30:16.341] [ERROR] [default] - SequelizeConnectionError: password authentication failed for user "fidel"
+    at /home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:20
+    at Client.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/client.js:203:5)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at ConnectionManager.connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:112:10)
+    at ConnectionManager.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Promise.then (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/promise.js:21:17)
+    at ConnectionManager.$connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:246:70)
+    at ConnectionManager.getConnection (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:203:44)
+    at Sequelize.query (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:844:83)
+    at Sequelize.authenticate (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:1085:15)
+    at Application.start (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/src/app/Application.js:14:27)
+    at Object.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/index.js:6:4)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+[2020-08-08 13:30:58.302] [ERROR] [default] - SequelizeConnectionError: password authentication failed for user "fidel"
+    at /home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:20
+    at Client.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/client.js:203:5)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at ConnectionManager.connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:112:10)
+    at ConnectionManager.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Promise.then (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/promise.js:21:17)
+    at ConnectionManager.$connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:246:70)
+    at ConnectionManager.getConnection (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:203:44)
+    at Sequelize.query (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:844:83)
+    at Sequelize.authenticate (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:1085:15)
+    at Application.start (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/src/app/Application.js:14:27)
+    at Object.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/index.js:6:4)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+[2020-08-08 13:31:00.872] [ERROR] [default] - SequelizeConnectionError: password authentication failed for user "fidel"
+    at /home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:20
+    at Client.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/client.js:203:5)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at ConnectionManager.connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:112:10)
+    at ConnectionManager.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Promise.then (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/promise.js:21:17)
+    at ConnectionManager.$connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:246:70)
+    at ConnectionManager.getConnection (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:203:44)
+    at Sequelize.query (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:844:83)
+    at Sequelize.authenticate (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:1085:15)
+    at Application.start (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/src/app/Application.js:14:27)
+    at Object.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/index.js:6:4)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+[2020-08-08 13:31:06.695] [ERROR] [default] - SequelizeConnectionError: password authentication failed for user "fidel"
+    at /home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:20
+    at Client.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/client.js:203:5)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/pg/lib/connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at ConnectionManager.connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:112:10)
+    at ConnectionManager.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Promise.then (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/promise.js:21:17)
+    at ConnectionManager.$connect (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:246:70)
+    at ConnectionManager.getConnection (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:203:44)
+    at Sequelize.query (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:844:83)
+    at Sequelize.authenticate (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/node_modules/sequelize/lib/sequelize.js:1085:15)
+    at Application.start (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/src/app/Application.js:14:27)
+    at Object.<anonymous> (/home/fidel/projects/TRAINING/2ulaundry/2uAssessment/backend/index.js:6:4)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+[2020-08-08 13:32:55.412] [INFO] [default] - Executing (default): SELECT 1+1 AS result
+[2020-08-08 13:32:55.536] [INFO] [default] - [p 12498] Listening at port 3000
+[2020-08-08 13:33:20.864] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:33:20.996] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 858.143 ms - 2[0m
+[2020-08-08 13:33:24.090] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:33:24.532] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 442.620 ms - 2[0m
+[2020-08-08 13:33:28.098] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:33:28.674] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 580.661 ms - 2[0m
+[2020-08-08 13:33:32.094] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:33:32.218] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 125.945 ms - 2[0m
+[2020-08-08 13:33:32.306] [INFO] [default] - Executing (default): INSERT INTO "invoices" ("id","invoice_number","total","currency","vendor_name","remittance_address","status","invoice_date","due_date","created_at","updated_at") VALUES (DEFAULT,'130002',239.99,'USD','Fidel.','123 ABC St. Charlotte, NC 28209','PENDING','2019-08-21 00:00:00.000 +00:00','2019-09-21 00:00:00.000 +00:00','2020-08-08 18:33:32.295 +00:00','2020-08-08 18:33:32.295 +00:00') RETURNING *;
+[2020-08-08 13:33:32.424] [INFO] [default] - [0mPOST /api2u/invoice [32m201[0m 152.519 ms - 44[0m
+[2020-08-08 13:33:36.095] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:33:36.736] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 641.396 ms - 217[0m
+[2020-08-08 13:33:40.096] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:33:40.219] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 123.365 ms - 217[0m
+[2020-08-08 13:33:44.099] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:33:44.223] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 124.670 ms - 217[0m
+[2020-08-08 13:33:48.100] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:33:48.770] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 670.930 ms - 217[0m
+[2020-08-08 13:33:49.073] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:33:49.201] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 129.674 ms - 217[0m
+[2020-08-08 13:33:52.102] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:33:52.219] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 118.002 ms - 217[0m
+[2020-08-08 13:33:53.073] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:33:53.263] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 191.319 ms - 217[0m
+[2020-08-08 13:33:56.112] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:33:56.418] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 309.247 ms - 217[0m
+[2020-08-08 13:33:57.078] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:33:57.234] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 161.371 ms - 217[0m
+[2020-08-08 13:34:00.112] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:34:00.611] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 500.083 ms - 217[0m
+[2020-08-08 13:34:01.075] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:34:01.447] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 373.619 ms - 217[0m
+[2020-08-08 13:34:04.115] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:34:04.232] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 118.500 ms - 217[0m
+[2020-08-08 13:34:05.076] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:34:05.196] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 122.479 ms - 217[0m
+[2020-08-08 13:34:08.116] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:34:08.836] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 721.590 ms - 217[0m
+[2020-08-08 13:34:09.078] [INFO] [default] - Executing (default): SELECT "id", "invoice_number", "total", "currency", "vendor_name", "remittance_address", "status", "invoice_date", "due_date", "created_at", "updated_at" FROM "invoices" AS "invoice" WHERE "invoice"."status" = 'PENDING';
+[2020-08-08 13:34:09.691] [INFO] [default] - [0mGET /api2u/invoice/status/PENDING [32m200[0m 616.264 ms - 217[0m
