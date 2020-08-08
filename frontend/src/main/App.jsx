@@ -1,5 +1,8 @@
-import React, { Component } from React;
-import 'App.css';
+import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
+
+import './App.scss';
+import HomePage from './pages/home-page/home-page.component';
 
 class App extends Component {
    constructor() {
@@ -8,9 +11,12 @@ class App extends Component {
 
       }
    }
+
    render() {
       return(
-         <h1>Hello API</h1>
+         <Switch>
+            <Route exact path = '/' component = { HomePage }></Route>
+         </Switch>
       )
    }
 }

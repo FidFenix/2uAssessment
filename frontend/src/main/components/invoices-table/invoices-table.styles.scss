@@ -1,0 +1,19 @@
+.btn-approval:hover {
+   background-color: rgb(0, 128, 0);
+   color: white;
+   .state-approval {
+      display: inline;
+   }
+   .state-pending {
+      display: none
+   }
+}
+
+.btn-approval {
+   .state-pending {
+      display: inline;
+   }
+   .state-approval {
+      display: none;
+   }
+}
