@@ -5,7 +5,7 @@ This file contains the server for the websocket server
 ## End Points
 
 <dl>
-  <dt>This websocket could be seen at your local:</dt>
+  <dt>This websocket could be seen at your local (it only need to be running):</dt>
   <dd>
   WebSocket Server: http://localhost:3030/
   </dd>
