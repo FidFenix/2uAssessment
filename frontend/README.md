@@ -2,6 +2,9 @@
 
 This file contains the server for the frontend in ReactJS
 
+## How it works!
+First: POST Request for invoices at http://localhost:3000/api2u/invoice/
+Second: Go to http://localhost:3050/ and that is all!
 ## End Points
 
 <dl>
