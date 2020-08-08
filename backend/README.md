@@ -9,12 +9,6 @@ This file contains the server for the API invoice service
   <dd>
   ApiServer: http://localhost:3000/api2u/
   </dd>
-  <dd>
-  WebSocket Server: http://localhost:3030/
-  </dd>
-  <dd>
-  Frontend Server: http://localhost:3050/
-  </dd>
 </dl>
 
 ## Environment Set-up on your local
@@ -27,10 +21,6 @@ This file contains the server for the API invoice service
 6. Run the database migrations with `npm run sequelize db:migrate` (only if you have other DB to connect)
 7. Run the application in development mode with `npm run dev`
 8. Access `http://localhost:3000/api2u/invoice` and it is done!
-
-## Database migration:
-
-- `npm run sequelize db:migrate`
 
 ## Scripts
 
